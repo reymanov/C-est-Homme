@@ -32,19 +32,19 @@
 .nav .nav__link {
   text-decoration: none;
   color: black;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 10px;
   margin: 0 5px;
 }
 
 .hero {
   display: block;
-  height: 90vh;
+  height: 80vh;
   width: 100vw;
 }
 
 .hero .hero__greybox {
-  width: 100%;
+  width: 100vw;
   height: 80vh;
   margin-top: 10vh;
   background-color: #F4F4F4;
@@ -53,7 +53,7 @@
 .hero .hero__img {
   -webkit-transform: translateY(-10vh);
           transform: translateY(-10vh);
-  width: 70vw;
+  max-width: clamp(400px, 70vw, 1300px);
 }
 
 .hero .hero__title {
@@ -69,5 +69,90 @@
   font-size: clamp(2rem, 5vw, 8rem);
   font-weight: 500;
   border-bottom: .5vw solid black;
+}
+
+.signature {
+  width: 100vw;
+  height: 35vh;
+  text-align: center;
+  padding: 5vh 10vh;
+}
+
+.signature .signature__title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.signature .signature__paragraph {
+  width: 50vw;
+  margin: 40px auto;
+  font-size: 1.4rem;
+}
+
+.signature .signature__sign {
+  margin-top: 60px;
+  font-size: 2.6rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.projects {
+  margin-top: 50px;
+}
+
+.projects :nth-of-type(even) {
+  background-color: #fff;
+}
+
+.projects :nth-of-type(even) .project__img {
+  margin-left: 60vw;
+}
+
+.projects :nth-of-type(even) .project__textbox {
+  text-align: right;
+  left: 22vw;
+}
+
+.project {
+  position: relative;
+  background-color: #FBFAFA;
+}
+
+.project .project__img {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  margin-left: 12vw;
+  width: 26vw;
+}
+
+.project .project__textbox {
+  width: 540px;
+  position: absolute;
+  top: 140px;
+  left: 48vw;
+}
+
+.project .project__title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.project .project__description {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  word-spacing: 5px;
+}
+
+.project .project__button {
+  position: relative;
+  margin-top: 20px;
+  width: 30%;
+  height: 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
