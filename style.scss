@@ -93,23 +93,6 @@ $fontcolor: black;
     }
 }
 
-.projects{
-    margin-top: 50px;
-    & :nth-of-type(even){
-        background-color: #fff;
-        
-        & .project__img{
-            margin-left: 60vw;
-        }
-
-        & .project__textbox{
-            text-align: right;
-            left: 22vw;
-        }
-
-    }
-}
-
 
 .project{
     position: relative;
@@ -121,19 +104,19 @@ $fontcolor: black;
     }
 
     .project__textbox{
-        width: 540px;
+        width: 35vw;
         position: absolute;
-        top: 140px;
+        top: 6vw;
         left: 48vw;
     }
 
     .project__title{
-        font-size: 3rem;
+        font-size: clamp(1.3rem,3vw,3rem);
         font-weight: 300;
     }
 
     .project__description{
-        font-size: 1.4rem;
+        font-size: clamp(.8rem,1.6vw,1.4rem);
         margin-top: 20px;
         word-spacing: 5px;
     }
@@ -141,9 +124,9 @@ $fontcolor: black;
     .project__button{
         position: relative;
         margin-top: 20px;
-        width: 30%;
-        height: 30px;
-        font-size: 1.2rem;
+        width: clamp(60px,40%,140px);
+        height: 20px;
+        font-size: clamp(.4rem,2vw,1.2rem);
         font-weight: 500;
         letter-spacing: 1px;
         background: none;
@@ -172,6 +155,23 @@ $fontcolor: black;
         }
     }
 
+}
+
+.projects{
+    margin-top: 50px;
+    & :nth-of-type(even){
+        background-color: #fff;
+        
+        & .project__img{
+            margin-left: 60vw;
+        }
+
+        & .project__textbox{
+            text-align: right;
+            left: 22%;
+        }
+
+    }
 }
 
 
