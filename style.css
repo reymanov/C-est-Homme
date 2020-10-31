@@ -109,7 +109,7 @@
 }
 
 .project .project__textbox {
-  width: 35vw;
+  width: 30vw;
   position: absolute;
   top: 6vw;
   left: 48vw;
@@ -131,7 +131,7 @@
   margin-top: 20px;
   width: clamp(60px, 40%, 140px);
   height: 20px;
-  font-size: clamp(0.4rem, 2vw, 1.2rem);
+  font-size: clamp(0.6rem, 1.6vw, 1.2rem);
   font-weight: 500;
   letter-spacing: 1px;
   background: none;
@@ -180,26 +180,27 @@
 }
 
 .team {
-  width: 100%;
-  height: 76vh;
+  width: 100vw;
+  height: 80vh;
   position: relative;
 }
 
 .team .team__img {
   position: absolute;
   right: 0;
-  top: 10vh;
+  top: 8vw;
+  width: 55%;
 }
 
 .team .team__textbox {
   position: absolute;
-  top: 25%;
+  top: 12vw;
   left: 10%;
-  width: 30%;
+  width: 35%;
 }
 
 .team .team__textbox .team__header {
-  font-size: 3.6rem;
+  font-size: clamp(1.6rem, 4vw, 3.6rem);
   font-weight: 300;
 }
 
@@ -210,12 +211,12 @@
 .team .team__textbox .team__paragraph {
   position: absolute;
   display: block;
-  width: 900px;
+  width: 50vw;
   left: -20%;
-  font-size: 1.4rem;
+  font-size: clamp(0.6rem, 1.6vw, 1.4rem);
   background-color: #F4F4F4;
-  padding: 40px 10%;
-  margin-top: 60px;
+  padding: 2vw 4vw;
+  margin-top: 4vw;
   word-spacing: 5px;
 }
 
@@ -353,6 +354,12 @@
   color: black;
 }
 
+@media (max-width: 1300px) {
+  .team {
+    height: 60vh;
+  }
+}
+
 @media (max-width: 1100px) {
   .hero__title {
     -webkit-transform: translateY(-10vh);
@@ -361,6 +368,9 @@
   .signature {
     height: 300px;
     padding-top: 30px;
+  }
+  .team {
+    height: 50vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
