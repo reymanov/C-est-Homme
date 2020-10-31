@@ -39,13 +39,13 @@
 
 .hero {
   display: block;
-  height: 80vh;
+  height: 58vw;
   width: 100vw;
 }
 
 .hero .hero__greybox {
   width: 100vw;
-  height: 80vh;
+  height: clamp(300px, 50vw, 1100px);
   margin-top: 10vh;
   background-color: #F4F4F4;
 }
@@ -75,23 +75,23 @@
   width: 100vw;
   height: 35vh;
   text-align: center;
-  padding: 5vh 10vh;
+  padding: 0 15vw;
 }
 
 .signature .signature__title {
-  font-size: 3rem;
+  font-size: clamp(1.6rem, 4vw, 3rem);
   font-weight: 300;
 }
 
 .signature .signature__paragraph {
-  width: 50vw;
+  width: clamp(200px, 60vw, 700px);
   margin: 40px auto;
-  font-size: 1.4rem;
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
 }
 
 .signature .signature__sign {
-  margin-top: 60px;
-  font-size: 2.6rem;
+  margin-top: 40px;
+  font-size: clamp(1.4rem, 3vw, 2.6rem);
   font-weight: 200;
   font-style: italic;
 }
@@ -294,7 +294,73 @@
 .contact {
   width: 100%;
   height: 500px;
-  margin-top: 100px;
-  border: 1px red solid;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.contact .contact__header {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.contact .contact__header span {
+  font-weight: 500;
+}
+
+.contact .contact__button {
+  position: relative;
+  width: 140px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: none;
+  color: #3a3a3a;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.contact .contact__button:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  margin: auto;
+  width: 0px;
+  height: 3px;
+  background-color: black;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.contact .contact__button:hover:before {
+  width: 95px;
+  color: black;
+}
+
+.contact .contact__button:hover {
+  color: black;
+}
+
+@media (max-width: 1100px) {
+  .hero__title {
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
+  }
+  .signature {
+    height: 300px;
+    padding-top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
