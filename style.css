@@ -6,6 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+button {
+  outline: none;
+}
+
 .nav {
   display: block;
   width: 100vw;
@@ -190,13 +194,15 @@
   right: 0;
   top: 8vw;
   width: 55%;
+  -webkit-filter: grayscale(0.4);
+          filter: grayscale(0.4);
 }
 
 .team .team__textbox {
   position: absolute;
   top: 12vw;
   left: 10%;
-  width: 35%;
+  width: 45%;
 }
 
 .team .team__textbox .team__header {
@@ -223,7 +229,7 @@
 .explore {
   position: relative;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 5vw;
 }
 
 .explore .explore__img {
@@ -232,16 +238,17 @@
   height: 22vw;
   margin-left: 5vw;
   z-index: 1;
+  -webkit-filter: grayscale(0.6);
+          filter: grayscale(0.6);
 }
 
 .explore .explore__greybox {
   width: 70vw;
-  height: 400px;
+  height: 20vw;
   position: absolute;
   top: 20%;
   left: 0;
-  z-index: 0;
-  background-color: #FBFAFA;
+  background-color: #F4F4F4;
 }
 
 .explore .explore__greybox .explore__textbox {
@@ -252,16 +259,15 @@
 }
 
 .explore .explore__greybox .explore__textbox .explore__header {
-  font-size: 3rem;
+  font-size: clamp(1.2rem, 2.4vw, 3rem);
   font-weight: 300;
 }
 
 .explore .explore__greybox .explore__textbox .explore__button {
   position: relative;
-  margin-top: 20px;
-  width: 30%;
-  height: 30px;
-  font-size: 1.2rem;
+  margin-top: 2vw;
+  padding: 1% 4%;
+  font-size: clamp(0.8rem, 1.6vw, 1.2rem);
   font-weight: 500;
   letter-spacing: 1px;
   background: none;
@@ -285,7 +291,7 @@
 }
 
 .explore .explore__greybox .explore__textbox .explore__button.explore__button:hover:before {
-  width: 95%;
+  width: 80%;
 }
 
 .explore .explore__greybox .explore__textbox .explore__button:hover {
@@ -294,8 +300,8 @@
 
 .contact {
   width: 100%;
-  height: 500px;
-  margin-top: 60px;
+  height: 200px;
+  margin-top: 8vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,10 +314,16 @@
   text-align: center;
 }
 
+.contact .contact__box {
+  position: relative;
+  padding: 2% 6% 1%;
+}
+
 .contact .contact__header {
-  font-size: 3rem;
+  font-size: clamp(1.6rem, 3vw, 3rem);
   font-weight: 300;
-  margin-bottom: 30px;
+  margin: 10px 0 10px;
+  padding: 10px 20px;
 }
 
 .contact .contact__header span {
@@ -320,10 +332,9 @@
 
 .contact .contact__button {
   position: relative;
-  width: 140px;
-  height: 40px;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 1.6vw, 1.2rem);
   font-weight: 500;
+  padding: 8px 20px;
   letter-spacing: 1px;
   background: none;
   color: #3a3a3a;
