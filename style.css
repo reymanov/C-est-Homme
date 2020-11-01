@@ -118,7 +118,7 @@ button {
 .project .project__textbox {
   width: 30vw;
   position: absolute;
-  top: 6vw;
+  top: 8vw;
   left: 48vw;
 }
 
@@ -132,42 +132,6 @@ button {
   margin-top: 20px;
   font-weight: 300;
   word-spacing: 5px;
-}
-
-.project .project__button {
-  position: relative;
-  margin-top: 20px;
-  width: clamp(60px, 40%, 140px);
-  height: 20px;
-  font-size: clamp(0.6rem, 1.6vw, 1.2rem);
-  font-weight: 500;
-  letter-spacing: 1px;
-  background: none;
-  color: #3a3a3a;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-.project .project__button:before {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  margin: auto;
-  width: 0px;
-  height: 3px;
-  background-color: black;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-.project .project__button.project__button:hover:before {
-  width: 72%;
-}
-
-.project .project__button:hover {
-  color: black;
 }
 
 .projects {
