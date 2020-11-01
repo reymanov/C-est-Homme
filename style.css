@@ -55,6 +55,8 @@ button {
 }
 
 .hero .hero__img {
+  position: absolute;
+  top: 20vh;
   -webkit-transform: translateY(-10vh);
           transform: translateY(-10vh);
   max-width: clamp(400px, 70vw, 1300px);
@@ -69,7 +71,7 @@ button {
   font-weight: 300;
 }
 
-.hero .hero__title span {
+.hero .hero__title .title-3 {
   font-size: clamp(2rem, 5vw, 8rem);
   font-weight: 500;
   border-bottom: .5vw solid black;
@@ -151,7 +153,7 @@ button {
 .project .project__button:before {
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: -10px;
   margin: auto;
   width: 0px;
   height: 3px;
