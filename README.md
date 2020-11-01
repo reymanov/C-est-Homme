@@ -4,7 +4,7 @@ Landing page for architecture company
 
 ## Live Preview
 
-https://reymanov.github.io/C-est-Homme/
+https://reymanov.github.io/c-est-homme/
 
 ## Built With
 
