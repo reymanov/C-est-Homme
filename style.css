@@ -6,6 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 button {
   outline: none;
 }
@@ -49,7 +53,7 @@ button {
 
 .hero .hero__greybox {
   width: 100vw;
-  height: clamp(300px, 50vw, 1100px);
+  height: clamp(300px, 50vw, 900px);
   margin-top: 10vh;
   background-color: #F4F4F4;
 }
@@ -90,7 +94,7 @@ button {
 }
 
 .signature .signature__paragraph {
-  width: clamp(200px, 60vw, 700px);
+  width: clamp(200px, 60vw, 800px);
   margin: 40px auto;
   font-weight: 300;
   font-size: clamp(0.8rem, 2vw, 1.4rem);
@@ -98,7 +102,7 @@ button {
 
 .signature .signature__sign {
   margin-top: 40px;
-  font-size: clamp(1.4rem, 3vw, 2.6rem);
+  font-size: clamp(1.4rem, 3vw, 2.4rem);
   font-weight: 200;
   font-style: italic;
 }
