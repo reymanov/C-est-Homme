@@ -112,7 +112,6 @@ const exploreline = gsap.timeline({
   scrollTrigger: {
     trigger: ExploreContainer,
     start: "25% center",
-    markers: true,
   },
 });
 
@@ -121,3 +120,13 @@ exploreline
   .from(".explore__img", { x: -200, duration: 0.8 })
   .from(".explore__header", { y: -100, duration: 0.8 })
   .from(".explore__button", { duration: 0.2 });
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});

@@ -8,16 +8,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
         <link rel="shortcut icon" href="./Images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href='./style.css'>
     <title>C'est Homme</title>
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="Powrót do góry"><i class="fas fa-angle-double-up"></i></button>
 <nav class="nav">
     <h1 class="nav__logo">C'est Homme</h1>
     <div class="nav__links">
-        <a href="#" class="nav__link">PROJECTS</a>
-        <a href="#" class="nav__link">CONTACT</a>
+        <a href="#projects" class="nav__link">PROJECTS</a>
+        <a href="#contact" class="nav__link">CONTACT</a>
     </div>
 </nav>
 
@@ -36,7 +39,7 @@
     <h3 class="signature__sign">Vivienne Eastwood</h3>
 </section>
 
-<section class="projects">
+<section class="projects" id="projects">
     <div class="project p1">
         <img class="project__img p1-img" src="./Images/lunatower.jpg" alt="lunatower">
         <div class="project__textbox p1-textbox">
@@ -71,7 +74,7 @@
         culpa id odio deserunt magni?</p>
     </div>
 </section>
-<section class="explore">
+<section class="explore" id="contact">
     <img src="./Images/house.jpg" alt="house" class="explore__img">
     <div class="explore__greybox">
         <div class="explore__textbox">
@@ -100,7 +103,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-<script src="./animations.js"></script>
+<script src="./scripts/animations.js"></script>
+<script src="./scripts/scrollButton.js"></script>
 </body>
 
 </html>
