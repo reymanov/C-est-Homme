@@ -462,7 +462,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 100;
+  opacity: 1;
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
@@ -473,7 +473,7 @@ button {
   height: 50px;
   border: 4px solid #4b4b4b;
   top: 50%;
-  opacity: 100;
+  opacity: 1;
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
   -webkit-animation: loader 2s infinite ease;

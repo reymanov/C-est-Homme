@@ -32,7 +32,7 @@ function loaded() {
   }, 500);
 }
 
-if ((loaderContainer.style.opacity = "100")) {
+if ((loaderContainer.style.opacity = "1")) {
   document.documentElement.style.overflow = "hidden";
   document.body.scroll = "no";
 }
