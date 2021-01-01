@@ -23,6 +23,13 @@ function loaded() {
       .from(".title-2", { duration: 1 }, "-=.6")
       .from(".title-3", { duration: 1 }, "-=.6");
   }, 500);
+
+  setTimeout(() => {
+    document.documentElement.style.overflowY = "auto";
+    document.body.scrollY = "yes";
+
+    loaderContainer.style.display = "none";
+  }, 500);
 }
 
 if ((loaderContainer.style.opacity = "100")) {

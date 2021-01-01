@@ -1,11 +1,3 @@
-// const t1 = gsap.timeline({ defaults: { opacity: 0 } });
-
-// t1.from(".hero__greybox", { y: 500, duration: 0.8 })
-//   .from(".hero__img", { x: -1200, duration: 1.2 })
-//   .from(".title-1", { duration: 1 }, "-=.6")
-//   .from(".title-2", { duration: 1 }, "-=.6")
-//   .from(".title-3", { duration: 1 }, "-=.6");
-
 const signatureContainer = document.querySelector(".signature");
 
 gsap.from(signatureContainer.children, {
