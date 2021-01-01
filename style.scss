@@ -413,20 +413,23 @@ button {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgb(209, 208, 208);
+  background-color: $lightgrey;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: display 0.5s ease;
+  opacity: 100;
+  transition: opacity 1s ease;
 }
 
 .loader {
   display: inline-block;
   width: 50px;
   height: 50px;
-  border: 4px solid #fff;
+  border: 4px solid rgb(75, 75, 75);
   top: 50%;
+  opacity: 100;
+  transition: opacity 1s ease;
   animation: loader 2s infinite ease;
 }
 
@@ -434,7 +437,7 @@ button {
   vertical-align: top;
   display: inline-block;
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(75, 75, 75);
   animation: loader-inner 2s infinite ease-in;
 }
 
