@@ -449,6 +449,8 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: display 0.5s ease;
+  transition: display 0.5s ease;
 }
 
 .loader {
