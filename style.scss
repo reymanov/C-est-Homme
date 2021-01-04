@@ -30,7 +30,7 @@ button {
   background-color: #fff;
 
   .nav__logo {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: bold;
     letter-spacing: 3px;
     font-family: "Amatic SC", cursive;
@@ -40,7 +40,7 @@ button {
   .nav__link {
     text-decoration: none;
     color: $fontcolor;
-    font-size: 1.6rem;
+    font-size: 1.6em;
     font-weight: bold;
     padding: 10px;
     margin: 0 5px;
@@ -60,7 +60,7 @@ button {
 
   .hero__greybox {
     width: 100vw;
-    height: clamp(300px, 50vw, 900px);
+    height: clamp(200px, 50vw, 900px);
     margin-top: 10vh;
     background-color: $darkgrey;
   }
@@ -96,7 +96,7 @@ button {
   padding: 0 15vw;
 
   .signature__title {
-    font-size: clamp(1.6rem, 4vw, 3rem);
+    font-size: clamp(1.2rem, 4vw, 3rem);
     font-weight: 300;
   }
 
@@ -109,7 +109,7 @@ button {
 
   .signature__sign {
     margin-top: 40px;
-    font-size: clamp(1.4rem, 3vw, 2.4rem);
+    font-size: clamp(1rem, 3vw, 2.4rem);
     font-weight: 200;
     font-style: italic;
   }
@@ -385,13 +385,13 @@ button {
   }
 
   .footer__title {
-    font-size: clamp(0.9rem, 1.8vw, 1.4rem);
+    font-size: clamp(0.7rem, 1.5vw, 1.4rem);
     font-weight: 600;
     margin-bottom: 3%;
   }
 
   .footer__paragraph {
-    font-size: clamp(0.7rem, 1.2vw, 1.1rem);
+    font-size: clamp(0.5rem, 1.2vw, 1.1rem);
     font-weight: 400;
     line-height: 20px;
   }
@@ -496,13 +496,13 @@ button {
   }
 }
 
-@media (max-width: 1300px) {
+@media only screen and (max-width: 1300px) {
   .team {
     height: 60vh;
   }
 }
 
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .hero__title {
     transform: translateY(-10vh);
   }
@@ -514,5 +514,77 @@ button {
 
   .team {
     height: 50vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .project__textbox {
+    transform: translateY(-2em);
+    width: 280px !important;
+  }
+
+  .p2-textbox {
+    transform: translateX(-5em) translateY(-2em);
+  }
+
+  .footer__title {
+    margin-bottom: 1%;
+  }
+
+  .footer__paragraph {
+    line-height: 15px !important;
+  }
+
+  .signature__paragraph {
+    width: 70vw !important;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .nav {
+    font-size: 12px;
+  }
+
+  .hero__greybox {
+    height: 200px;
+  }
+
+  .hero__img {
+    max-width: 90vw !important;
+  }
+
+  .hero__title {
+    top: 25vh !important;
+  }
+
+  .project__description {
+    display: none;
+  }
+
+  .project__img {
+    width: 240px !important;
+    margin: 1em auto 4em !important;
+  }
+
+  .project {
+    display: flex;
+  }
+
+  .project__textbox {
+    position: relative;
+    top: 85% !important;
+    width: 160px !important;
+  }
+
+  .project:nth-of-type(1) .project__textbox {
+    transform: translateX(-4em) translateY(-2em);
+  }
+
+  .project:nth-of-type(3) .project__textbox {
+    transform: translateX(-5em) translateY(-2em);
+  }
+
+  .project:nth-of-type(2) .project__textbox {
+    left: 48vw !important;
   }
 }
