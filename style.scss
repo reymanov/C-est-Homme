@@ -116,6 +116,7 @@ button {
 }
 
 .project {
+  width: 100vw;
   position: relative;
   background-color: $lightgrey;
 
@@ -240,7 +241,7 @@ button {
 
 .explore {
   position: relative;
-  width: 100%;
+  width: 100vw;
   margin-top: 5vw;
 
   .explore__img {
@@ -261,13 +262,13 @@ button {
     background-color: $darkgrey;
 
     .explore__textbox {
-      max-width: 300px;
+      max-width: 140px;
       position: relative;
       left: 70%;
       top: 20%;
 
       .explore__header {
-        font-size: clamp(1.2rem, 2.4vw, 3rem);
+        font-size: clamp(1rem, 2.4vw, 3rem);
         font-weight: 300;
       }
 
@@ -275,7 +276,7 @@ button {
         position: relative;
         margin-top: 2vw;
         padding: 1% 4%;
-        font-size: clamp(0.8rem, 1.6vw, 1.2rem);
+        font-size: clamp(0.6rem, 1.6vw, 1.2rem);
         font-weight: 500;
         letter-spacing: 1px;
         background: none;
@@ -308,7 +309,7 @@ button {
 }
 
 .contact {
-  width: 100%;
+  width: 100vw;
   height: 200px;
   margin-top: 8vw;
   display: flex;
@@ -378,7 +379,7 @@ button {
   color: rgb(240, 240, 240);
 
   .footer__logo {
-    font-size: clamp(1.2rem, 2.4vw, 2rem);
+    font-size: clamp(1rem, 2.4vw, 2rem);
     letter-spacing: 3px;
     font-weight: bold;
     font-family: "Amatic SC", cursive;
@@ -508,12 +509,12 @@ button {
   }
 
   .signature {
-    height: 300px;
+    height: 280px;
     padding-top: 30px;
   }
 
   .team {
-    height: 50vw;
+    height: 500px;
   }
 }
 
@@ -538,6 +539,10 @@ button {
   .signature__paragraph {
     width: 70vw !important;
   }
+
+  .team {
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 625px) {
@@ -550,11 +555,12 @@ button {
   }
 
   .hero__img {
+    top: 22vh !important;
     max-width: 90vw !important;
   }
 
   .hero__title {
-    top: 25vh !important;
+    top: 28vh !important;
   }
 
   .project__description {
@@ -586,5 +592,49 @@ button {
 
   .project:nth-of-type(2) .project__textbox {
     left: 48vw !important;
+  }
+
+  .team__textbox {
+    top: 2em !important;
+    width: 240px !important;
+
+    .team__paragraph {
+      width: 320px !important;
+      margin-top: 8vw !important;
+      padding: 4vw 6vw !important;
+      top: 22em !important;
+      left: 0 !important;
+    }
+  }
+
+  .team__img {
+    top: 8em !important;
+    width: 300px !important;
+  }
+
+  .explore {
+    margin-top: 6em !important;
+  }
+
+  .explore__img {
+    width: 240px !important;
+    height: 120px !important;
+  }
+
+  .explore__greybox {
+    width: 100vw !important;
+    height: 120px !important;
+  }
+
+  .explore__textbox {
+    left: 70% !important;
+  }
+
+  .footer {
+    height: 14vw;
+  }
+
+  #myBtn {
+    display: none !important;
   }
 }
